@@ -10,8 +10,8 @@ import { emc as baseEMC } from 'be-render-neutral/emc.js';
  */
 export const emc = {
     ...baseEMC,
-    base: 'be-alit',
-    enhPropKey: 'beAlit',
+    base: 'be-solidarizing',
+    enhPropKey: 'beSolidarizing',
     importEnh: async () => {
         const { BeSolidarizing } = 
         /** @type {{new(): IEnhancement<Element>}} */ 
