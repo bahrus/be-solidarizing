@@ -1,11 +1,42 @@
 {
   "name": "be-solidarizing",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "JSON",
+    "bind",
+    "observe"
+  ],
+  "description": "be-solidarizing is a custom element enhancement that provides rendering capabilities based on SolidJS.",
+  "main": "be-solidarizing.js",
+  "module": "be-solidarizing.js",
+  "exports": {
+    ".": "./be-solidarizing.js",
+    "./emc.js": "./emc.js",
+    "./be-solidarizing.js": "./be-solidarizing.js",
+    "./✌️.js": "./✌️.js"
   },
-  "author": "",
+  "files": [
+    "*.js",
+    "./ts-refs/*"
+  ],
+  "scripts": {
+    "serve": "python3 ./node_modules/ssi-server/ssi_server.py",
+    "test": "playwright test",
+    "safari": "npx playwright wk http://localhost:3030",
+    "update": "ncu -u && npm install"
+  },
+  "dependencies": {
+    "be-render-neutral": "0.0.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.0",
+    "be-kvetching": "0.0.4",
+    "ssi-server": "0.0.1"
+  },
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT"
 }

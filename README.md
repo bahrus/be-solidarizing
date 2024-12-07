@@ -1,1 +1,2 @@
-# be-solidarizing
+# be-solidarizing (✌️)
+
